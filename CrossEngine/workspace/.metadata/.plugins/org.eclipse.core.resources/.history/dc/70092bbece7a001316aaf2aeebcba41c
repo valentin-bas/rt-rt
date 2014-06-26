@@ -1,0 +1,20 @@
+#include <jni.h>
+#include <android_native_app_glue.h>
+#include "Kernel.h"
+#include "EGLRenderer.h"
+
+
+void android_main(struct android_app* state)
+{
+	Kernel			kernel;
+	EGLRenderer*	renderer;
+	Android*		android;
+
+	renderer = new EGLRenderer(2);
+	kernel.AddTask(renderer);
+	android = new Android(state, renderer, 1);
+	kernel.AddTask(android);
+	kernel.Execute();
+	kernel.KillAllTasks();
+	return 0;
+}

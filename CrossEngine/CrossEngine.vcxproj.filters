@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Kernel">
+      <UniqueIdentifier>{cdfe19dd-86db-428e-bd80-1f3ab9968b02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Kernel">
+      <UniqueIdentifier>{8976e60c-5b14-419b-aecd-23f8d430ae36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Kernel\Android">
+      <UniqueIdentifier>{814c7169-a580-456f-a1a2-8462fa68e3c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Kernel\Windows">
+      <UniqueIdentifier>{745a3af6-eb6b-476d-9697-5a569cfdf09c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Kernel\Android">
+      <UniqueIdentifier>{2a115ba3-c1c2-4c15-a99f-ae0f6408e532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Kernel\Windows">
+      <UniqueIdentifier>{509f3597-d59b-434b-a947-b34b530791fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Raytracer">
+      <UniqueIdentifier>{2af9673d-8fb2-4372-9f78-c5302763f90c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Raytracer">
+      <UniqueIdentifier>{064cc773-73b5-48c2-ae90-cdef70fd3b3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Raytracer\Cuda">
+      <UniqueIdentifier>{7d0729db-0556-4e2a-9e07-3f5d21325c85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Raytracer\Cuda">
+      <UniqueIdentifier>{5f5dd6c1-98ba-4ac0-bc77-ed08c0843502}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Src\GLRenderer.cpp">
+      <Filter>Fichiers sources\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Kernel.cpp">
+      <Filter>Fichiers sources\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Renderer.cpp">
+      <Filter>Fichiers sources\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Android.cpp">
+      <Filter>Fichiers sources\Kernel\Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\EGLRenderer.cpp">
+      <Filter>Fichiers sources\Kernel\Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\GLFWRenderer.cpp">
+      <Filter>Fichiers sources\Kernel\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Window.cpp">
+      <Filter>Fichiers sources\Kernel\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\QtGLRenderer.cpp">
+      <Filter>Fichiers sources\Kernel\Windows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Src\Base.h">
+      <Filter>Fichiers d%27en-tête\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\GLRenderer.h">
+      <Filter>Fichiers d%27en-tête\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Kernel.h">
+      <Filter>Fichiers d%27en-tête\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Platform.h">
+      <Filter>Fichiers d%27en-tête\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Renderer.h">
+      <Filter>Fichiers d%27en-tête\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Singleton.h">
+      <Filter>Fichiers d%27en-tête\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Task.h">
+      <Filter>Fichiers d%27en-tête\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Types.h">
+      <Filter>Fichiers d%27en-tête\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Android.h">
+      <Filter>Fichiers d%27en-tête\Kernel\Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\AndroidBuf.h">
+      <Filter>Fichiers d%27en-tête\Kernel\Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\EGLRenderer.h">
+      <Filter>Fichiers d%27en-tête\Kernel\Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\GLFWRenderer.h">
+      <Filter>Fichiers d%27en-tête\Kernel\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Window.h">
+      <Filter>Fichiers d%27en-tête\Kernel\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\QtGLRenderer.h">
+      <Filter>Fichiers d%27en-tête\Kernel\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\DisplayableTask.h">
+      <Filter>Fichiers d%27en-tête\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Raytracer.h">
+      <Filter>Fichiers d%27en-tête\Raytracer\Cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\RaytracerDevice.cuh">
+      <Filter>Fichiers d%27en-tête\Raytracer\Cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\RaytracerGlobal.cuh">
+      <Filter>Fichiers d%27en-tête\Raytracer\Cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\RaytracerTypes.cuh">
+      <Filter>Fichiers d%27en-tête\Raytracer\Cuda</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\Src\main.cpp">
+      <Filter>Fichiers sources</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\Src\Raytracer.cu">
+      <Filter>Fichiers sources\Raytracer\Cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\Src\RaytracerDevice.cu">
+      <Filter>Fichiers sources\Raytracer\Cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\Src\RaytracerGlobal.cu">
+      <Filter>Fichiers sources\Raytracer\Cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\Src\RaytracerTypes.cu">
+      <Filter>Fichiers sources\Raytracer\Cuda</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,28 @@
+#include <jni.h>
+#include <android_native_app_glue.h>
+
+void android_main(struct android_app* state)
+{
+    app_dummy();
+
+    bool running = true;
+    while (running)
+    {
+        int events;
+
+        struct android_poll_source* pSource = NULL;
+        int ident = ALooper_pollAll(0, 0, &events, (void**)&pSource);
+        if (ident >= 0)
+        {
+            if (pSource)
+            {
+                pSource->process(state, pSource);
+            }
+
+            if (state->destroyRequested)
+            {
+                running = false;
+            }
+        }
+    }
+}
